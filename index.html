@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Phonk Around, Find Out — Navaneet Mohan Nair</title>
+<meta name="description" content="PHONK AROUND, FIND OUT. A dark drift-phonk debut by Navaneet Mohan Nair. Rebirth × Grit × God. Dropping soon.">
+<meta property="og:title" content="Phonk Around, Find Out — Dropping Soon">
+<meta property="og:description" content="A dark drift-phonk debut by Navaneet Mohan Nair. Rebirth × Grit × God.">
+<meta property="og:image" content="img/album.webp">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230a0809'/%3E%3Ccircle cx='16' cy='16' r='11' fill='none' stroke='%23c2185b' stroke-width='2'/%3E%3Cpath d='M16 6v20' stroke='%23f4f1ec' stroke-width='2.5'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+<link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0a0809; --bg-2:#120d0f; --ink:#f4f1ec; --muted:#a59c97; --faint:#5f5753;
+  --line:rgba(244,241,236,.12); --accent:#c2185b; --accent-2:#e3416f; --gold:#d9a54a; --ice:#9fb4d8;
+  --display:'Anton',Impact,sans-serif; --body:'General Sans',system-ui,sans-serif;
+  --w:min(1180px,92vw);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:clamp(15px,1.05vw,17px);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit}
+.grain{position:fixed;inset:0;pointer-events:none;z-index:50;opacity:.07;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+.wrap{width:var(--w);margin-inline:auto}
+nav{position:fixed;top:0;left:0;right:0;z-index:40;padding:18px 0;background:linear-gradient(var(--bg),transparent)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;font-weight:600;letter-spacing:.14em;font-size:12px;text-transform:uppercase}
+.brand svg{width:30px;height:30px;color:var(--ink)}
+.pill{font-size:12px;letter-spacing:.16em;text-transform:uppercase;border:1px solid var(--line);padding:8px 14px;border-radius:999px;color:var(--muted);display:flex;align-items:center;gap:8px}
+.dot{width:7px;height:7px;border-radius:50%;background:var(--accent-2);box-shadow:0 0 0 0 rgba(227,65,111,.7);animation:pulse 2s infinite}
+@keyframes pulse{70%{box-shadow:0 0 0 10px rgba(227,65,111,0)}100%{box-shadow:0 0 0 0 rgba(227,65,111,0)}}
+
+/* hero */
+.hero{min-height:100svh;display:grid;align-items:center;padding:120px 0 70px;position:relative;isolation:isolate}
+.hero::before{content:"";position:absolute;inset:0;z-index:-1;background:radial-gradient(60% 50% at 70% 40%,rgba(194,24,91,.22),transparent 70%),radial-gradient(40% 40% at 15% 85%,rgba(159,180,216,.08),transparent 70%)}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(32px,5vw,80px);align-items:center}
+.eyebrow{font-size:12px;letter-spacing:.28em;text-transform:uppercase;color:var(--accent-2);font-weight:600;margin-bottom:22px}
+h1{font-family:var(--display);font-weight:400;font-size:clamp(56px,9.2vw,148px);line-height:.9;letter-spacing:-.005em;text-transform:uppercase}
+h1 span{display:block}
+h1 .out{color:transparent;-webkit-text-stroke:1.5px var(--ink)}
+.tagline{margin-top:26px;font-family:var(--display);font-size:clamp(18px,1.8vw,24px);letter-spacing:.18em;color:var(--muted);text-transform:uppercase}
+.tagline b{color:var(--ink);font-weight:400}
+.lede{margin-top:22px;max-width:46ch;color:var(--muted)}
+.cta{margin-top:34px;display:flex;flex-wrap:wrap;gap:14px;align-items:center}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:15px 24px;border-radius:999px;font-weight:600;font-size:14px;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;border:1px solid transparent;cursor:pointer;transition:transform .2s,background .2s,border-color .2s;font-family:var(--body)}
+.btn-primary{background:var(--accent);color:#fff}
+.btn-primary:hover{background:var(--accent-2);transform:translateY(-2px)}
+.btn-ghost{border-color:var(--line);color:var(--ink);background:transparent}
+.btn-ghost:hover{border-color:var(--ink)}
+.btn:focus-visible{outline:2px solid var(--ink);outline-offset:3px}
+.cover{position:relative;aspect-ratio:1;border-radius:6px;overflow:hidden;box-shadow:0 40px 120px -30px rgba(194,24,91,.55),0 0 0 1px var(--line)}
+.cover img{width:100%;height:100%;object-fit:cover;transform:scale(1.04);transition:transform 1.2s cubic-bezier(.2,.7,.2,1)}
+.cover:hover img{transform:scale(1)}
+.halo{position:absolute;inset:-14%;z-index:-1;border-radius:50%;border:1px solid rgba(194,24,91,.35);animation:spin 60s linear infinite}
+.halo::after{content:"";position:absolute;inset:8%;border-radius:50%;border:1px dashed rgba(244,241,236,.12)}
+@keyframes spin{to{transform:rotate(360deg)}}
+.cover-wrap{position:relative}
+
+/* marquee */
+.marquee{border-block:1px solid var(--line);overflow:hidden;padding:18px 0;background:var(--bg-2)}
+.marquee div{display:flex;gap:48px;white-space:nowrap;width:max-content;animation:mq 38s linear infinite;font-family:var(--display);font-size:clamp(22px,2.6vw,34px);letter-spacing:.06em;text-transform:uppercase;color:var(--faint)}
+.marquee em{font-style:normal;color:var(--accent-2)}
+@keyframes mq{to{transform:translateX(-50%)}}
+
+section{padding:clamp(80px,11vw,150px) 0}
+.sec-head{display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:clamp(40px,5vw,64px);flex-wrap:wrap}
+h2{font-family:var(--display);font-weight:400;font-size:clamp(40px,5.6vw,84px);line-height:.95;text-transform:uppercase}
+.sec-head p{max-width:42ch;color:var(--muted)}
+
+/* story */
+.story .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
+.story article{background:var(--bg);padding:34px 28px 38px}
+.story .n{font-family:var(--display);font-size:15px;color:var(--accent-2);letter-spacing:.12em}
+.story h3{font-family:var(--display);font-weight:400;font-size:26px;line-height:1.05;text-transform:uppercase;margin:16px 0 14px}
+.story article p{color:var(--muted);font-size:15px}
+.quote{margin-top:clamp(56px,7vw,96px);font-family:var(--display);font-size:clamp(28px,4vw,58px);line-height:1.05;text-transform:uppercase;max-width:20ch}
+.quote span{color:var(--accent-2)}
+
+/* tracks */
+.tracks{background:var(--bg-2)}
+.track{display:grid;grid-template-columns:72px 1fr 1.1fr;gap:clamp(20px,4vw,56px);align-items:center;padding:clamp(28px,4vw,44px) 0;border-top:1px solid var(--line)}
+.track:last-child{border-bottom:1px solid var(--line)}
+.track .num{font-family:var(--display);font-size:clamp(36px,4vw,56px);color:var(--faint)}
+.track .art{aspect-ratio:1;max-width:340px;border-radius:4px;overflow:hidden;box-shadow:0 0 0 1px var(--line)}
+.track .art img{width:100%;height:100%;object-fit:cover;transition:transform .8s}
+.track:hover .art img{transform:scale(1.05)}
+.track h3{font-family:var(--display);font-weight:400;font-size:clamp(32px,3.6vw,54px);line-height:.95;text-transform:uppercase}
+.meta{display:flex;gap:10px;flex-wrap:wrap;margin:16px 0 18px}
+.meta span{font-size:11px;letter-spacing:.16em;text-transform:uppercase;border:1px solid var(--line);padding:6px 10px;border-radius:999px;color:var(--muted)}
+.track p{color:var(--muted);max-width:52ch}
+.track .sound{margin-top:14px;color:var(--ink);font-size:14px;max-width:52ch}
+.t1 h3{color:var(--ice)} .t2 h3{color:#e8e3dc} .t3 h3{color:var(--gold)}
+
+/* notify */
+.notify{text-align:center}
+.notify h2{font-size:clamp(56px,10vw,160px)}
+.notify p{color:var(--muted);max-width:48ch;margin:22px auto 0}
+.notify .cta{justify-content:center}
+.toast{margin-top:18px;min-height:24px;color:var(--accent-2);font-size:14px}
+footer{border-top:1px solid var(--line);padding:34px 0;color:var(--faint);font-size:13px}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .9s ease,transform .9s cubic-bezier(.2,.7,.2,1)}
+.reveal.in{opacity:1;transform:none}
+
+
+/* audio */
+.play{display:inline-flex;align-items:center;gap:10px;margin-top:20px;background:transparent;border:1px solid var(--line);color:var(--ink);border-radius:999px;padding:10px 18px 10px 12px;font:600 13px var(--body);letter-spacing:.08em;text-transform:uppercase;cursor:pointer;transition:border-color .2s,background .2s}
+.play:hover{border-color:var(--ink)}
+.play:focus-visible,.sound:focus-visible{outline:2px solid var(--ink);outline-offset:3px}
+.play .ic{width:30px;height:30px;border-radius:50%;background:var(--ink);color:var(--bg);display:grid;place-items:center}
+.play .ic svg{width:12px;height:12px}
+.play.on{background:rgba(194,24,91,.18);border-color:var(--accent)}
+.prog{height:2px;background:var(--line);margin-top:14px;max-width:340px;border-radius:2px;overflow:hidden}
+.prog i{display:block;height:100%;width:0;background:var(--accent-2)}
+.sound{position:fixed;right:clamp(14px,3vw,28px);bottom:clamp(14px,3vw,28px);z-index:45;display:flex;align-items:center;gap:12px;background:rgba(18,13,15,.85);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border:1px solid var(--line);color:var(--ink);border-radius:999px;padding:10px 18px 10px 10px;font:600 12px var(--body);letter-spacing:.12em;text-transform:uppercase;cursor:pointer}
+.sound .bars{display:flex;gap:3px;align-items:end;height:16px;width:22px;padding-left:6px}
+.sound .bars span{width:3px;background:var(--accent-2);height:4px;border-radius:1px}
+.sound.on .bars span{animation:eq .9s ease-in-out infinite}
+.sound.on .bars span:nth-child(2){animation-delay:.2s}.sound.on .bars span:nth-child(3){animation-delay:.4s}.sound.on .bars span:nth-child(4){animation-delay:.1s}
+@keyframes eq{0%,100%{height:4px}50%{height:16px}}
+.sound small{display:block;font-weight:500;letter-spacing:.06em;text-transform:none;color:var(--muted);font-size:11px}
+.finale{color:var(--gold);border-color:rgba(217,165,74,.45)!important}
+
+@media (max-width:900px){
+  .hero .wrap{grid-template-columns:1fr}
+  .cover-wrap{order:-1;max-width:460px;margin:0 auto;width:100%}
+  .story .grid{grid-template-columns:1fr 1fr}
+  .track{grid-template-columns:1fr;gap:18px}
+  .track .num{display:none}
+  .track .art{max-width:none}
+}
+@media (max-width:560px){.story .grid{grid-template-columns:1fr} .pill .lbl{display:none}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<div class="grain" aria-hidden="true"></div>
+
+<nav>
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Phonk Around, Find Out — home">
+      <svg viewBox="0 0 32 32" fill="none" aria-hidden="true"><circle cx="16" cy="16" r="13" stroke="currentColor" stroke-width="1.4"/><circle cx="16" cy="16" r="8.5" stroke="#c2185b" stroke-width="1.4" stroke-dasharray="2 2.2"/><path d="M16 4v24" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
+      Grit &amp; Grace
+    </a>
+    <div class="pill"><span class="dot"></span><span class="lbl">Debut album · </span>Dropping soon</div>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow reveal">Navaneet Mohan Nair · Debut album</p>
+      <h1 class="reveal"><span>Phonk</span><span>Around,</span><span class="out">Find Out.</span></h1>
+      <p class="tagline reveal"><b>Rebirth</b> × <b>Grit</b> × <b>God</b></p>
+      <p class="lede reveal">A dark drift-phonk journey through ego death, isolation and rebirth. Mafia-noir drums, weeping shehnai and dark violin from 140 to 160 BPM.</p>
+      <div class="cta reveal">
+        <button class="btn btn-primary" data-notify>Pre-save on Spotify</button>
+        <a class="btn btn-ghost" href="#tracks">See the tracklist</a>
+      </div>
+    </div>
+    <div class="cover-wrap reveal">
+      <div class="halo" aria-hidden="true"></div>
+      <div class="cover"><img src="img/album.webp" alt="Album cover for Phonk Around, Find Out: a man in a magenta embroidered jacket with glowing eyes before a dark halo" width="1200" height="1200" fetchpriority="high"></div>
+    </div>
+  </div>
+</header>
+
+<div class="marquee" aria-hidden="true"><div>
+  <span>Phonk Around</span><em>✕</em><span>Find Out</span><em>✕</em><span>Rebirth</span><em>✕</em><span>Grit</span><em>✕</em><span>God</span><em>✕</em><span>The Grit &amp; Grace</span><em>✕</em><span>A Phonk U Chapter</span><em>✕</em>
+  <span>Phonk Around</span><em>✕</em><span>Find Out</span><em>✕</em><span>Rebirth</span><em>✕</em><span>Grit</span><em>✕</em><span>God</span><em>✕</em><span>The Grit &amp; Grace</span><em>✕</em><span>A Phonk U Chapter</span><em>✕</em>
+</div></div>
+
+<section class="story" id="story">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <h2>The ego<br>as armor</h2>
+      <p>Spiritual paths preach dissolving the ego. The wounded warrior flips the script: the ego is the shield that keeps you alive through the darkest winter.</p>
+    </div>
+    <div class="grid">
+      <article class="reveal"><span class="n">01</span><h3>Emergency armor</h3><p>When betrayal and trauma hit, the ego steps in, not as a flaw but as a hard shield that blocks the pain and keeps you moving.</p></article>
+      <article class="reveal"><span class="n">02</span><h3>The refusal to break</h3><p>“I am too valuable to be destroyed by this.” Pride becomes the anchor that turns grief and humiliation into cold, calculated resilience.</p></article>
+      <article class="reveal"><span class="n">03</span><h3>Racy momentum</h3><p>This survival instinct isn't quiet. It's high-speed and aggressive, the swagger needed to outrun past failures.</p></article>
+      <article class="reveal"><span class="n">04</span><h3>Catalyst for rebirth</h3><p>The ego is the hardened stepping stone that preserves the self until true rebirth and higher alignment can take place.</p></article>
+    </div>
+    <p class="quote reveal">Rebirth through grit, <span>guided by God.</span></p>
+  </div>
+</section>
+
+<section class="tracks" id="tracks">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <h2>Tracklist</h2>
+      <p>Three chapters, three worlds. From armored swagger to frozen isolation to the finale's spiritual elevation.</p>
+    </div>
+
+    <article class="track t1 reveal">
+      <div class="num">01</div>
+      <div class="art"><img src="img/ego.webp" alt="Cover for My Ego The Goat: a man in white embroidered armor looking back over his shoulder against deep blue" loading="lazy" width="1200" height="1200"></div>
+      <div>
+        <h3>My Ego<br>The Goat</h3>
+        <div class="meta"><span>160 BPM</span><span>Drift phonk</span><span>Shehnai · Violin · Flute</span></div>
+        <p>The anthem of an ego forged in fire. Unshakeable, armored self-belief: a man standing tall, refusing to break under pressure.</p>
+        <p class="sound">Punchy mafia drums, gritty violin, an intricate dark shehnai and a wandering flute. Razor drops and sudden, breathtaking silences.</p>
+        <button class="play" data-track="ego" aria-label="Play My Ego The Goat"><span class="ic"><svg viewBox="0 0 12 12" fill="currentColor" aria-hidden="true"><path d="M2 1l9 5-9 5z"/></svg></span><span class="lbl">Play preview</span></button>
+        <div class="prog" aria-hidden="true"><i data-prog="ego"></i></div>
+      </div>
+    </article>
+
+    <article class="track t2 reveal">
+      <div class="num">02</div>
+      <div class="art"><img src="img/broken.webp" alt="Cover for A Broken Man With A Cold Front: a frost-marked man with glowing eyes before a crimson halo" loading="lazy" width="1200" height="1200"></div>
+      <div>
+        <h3>A Broken Man<br>With A Cold Front</h3>
+        <div class="meta"><span>140 BPM half-time</span><span>Mafia-noir</span><span>Winter winds</span></div>
+        <p>Internal fracture and the cold front a person puts up after deep betrayal, turning vulnerability into hard armor.</p>
+        <p class="sound">Chilling winds, weeping shehnai and flute, then heavy brooding sub-bass. Wide empty space against hard-hitting rhythmic violence.</p>
+        <button class="play" data-track="broken" aria-label="Play A Broken Man With A Cold Front"><span class="ic"><svg viewBox="0 0 12 12" fill="currentColor" aria-hidden="true"><path d="M2 1l9 5-9 5z"/></svg></span><span class="lbl">Play preview</span></button>
+        <div class="prog" aria-hidden="true"><i data-prog="broken"></i></div>
+      </div>
+    </article>
+
+    <article class="track t3 reveal">
+      <div class="num">03</div>
+      <div class="art"><img src="img/lightworker.webp" alt="Cover for Lightworker's Creed: a man meditating in a golden field at sunrise beneath an ornate red halo" loading="lazy" width="1200" height="1200"></div>
+      <div>
+        <h3>Lightworker's<br>Creed</h3>
+        <div class="meta"><span class="finale">The finale</span><span>150 BPM</span><span>Raven · Hawk</span></div>
+        <p>The spiritual paradox of the wounded warrior: a protector who must navigate darkness to guard the light.</p>
+        <p class="sound">Howling cold winds, a distant raven and hawk cry, then a majestic blend of dark shehnai and crying violin, closing the album in A major.</p>
+        <button class="play" data-track="lightworker" aria-label="Play Lightworker's Creed"><span class="ic"><svg viewBox="0 0 12 12" fill="currentColor" aria-hidden="true"><path d="M2 1l9 5-9 5z"/></svg></span><span class="lbl">Play preview</span></button>
+        <div class="prog" aria-hidden="true"><i data-prog="lightworker"></i></div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="notify" id="notify">
+  <div class="wrap reveal">
+    <p class="eyebrow">The Grit &amp; Grace · A Phonk U Chapter</p>
+    <h2>Dropping<br>soon.</h2>
+    <p>Three tracks. One rebirth. Pre-save goes live with the release date.</p>
+    <div class="cta"><button class="btn btn-primary" data-notify>Pre-save on Spotify</button></div>
+    <p class="toast" role="status" aria-live="polite"></p>
+  </div>
+</section>
+
+<button class="sound" id="sound" aria-pressed="false" aria-label="Play background music: Lightworker's Creed"><span class="bars" aria-hidden="true"><span></span><span></span><span></span><span></span></span><span><span id="sndlbl">Sound on</span><small id="sndnow">Lightworker's Creed</small></span></button>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Navaneet Mohan Nair. All rights reserved.</span>
+    <span>Phonk Around, Find Out · Rebirth × Grit × God</span>
+  </div>
+</footer>
+
+<script>
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+const PRESAVE_URL=''; // add the DistroKid HyperFollow / pre-save link here
+const toast=document.querySelector('.toast');
+document.querySelectorAll('[data-notify]').forEach(b=>b.addEventListener('click',()=>{
+  if(PRESAVE_URL){window.open(PRESAVE_URL,'_blank','noopener');return}
+  toast.textContent='Pre-save link goes live with the release date. Stay tuned.';
+  document.getElementById('notify').scrollIntoView({behavior:'smooth'});
+}));
+
+const TR={ego:"My Ego The Goat",broken:"A Broken Man With A Cold Front",lightworker:"Lightworker's Creed"};
+const audio=new Audio(); audio.preload="none"; let cur=null, bg=false;
+const sound=document.getElementById('sound'), lbl=document.getElementById('sndlbl'), now=document.getElementById('sndnow');
+function ui(){
+  document.querySelectorAll('.play').forEach(b=>{const on=!audio.paused&&!bg&&b.dataset.track===cur;b.classList.toggle('on',on);b.querySelector('.lbl').textContent=on?'Pause':'Play preview';b.setAttribute('aria-pressed',on)});
+  const playing=!audio.paused; sound.classList.toggle('on',playing); sound.setAttribute('aria-pressed',playing);
+  lbl.textContent=playing?'Sound off':'Sound on'; now.textContent=TR[cur||'lightworker'];
+}
+function play(k,isBg){
+  if(cur!==k){audio.src='audio/'+k+'.mp3';cur=k}
+  bg=!!isBg; audio.loop=bg; audio.volume=bg?.55:1; audio.play().catch(()=>{}); ui();
+}
+document.querySelectorAll('.play').forEach(b=>b.addEventListener('click',()=>{
+  const k=b.dataset.track;
+  if(cur===k&&!audio.paused&&!bg){audio.pause();ui();return}
+  play(k,false);
+}));
+sound.addEventListener('click',()=>{ if(!audio.paused){audio.pause();ui();return} play(cur&&!bg?cur:'lightworker',true)});
+audio.addEventListener('timeupdate',()=>{document.querySelectorAll('[data-prog]').forEach(i=>{i.style.width=(i.dataset.prog===cur&&audio.duration?audio.currentTime/audio.duration*100:0)+'%'})});
+audio.addEventListener('ended',()=>{ if(bg) return; const order=['ego','broken','lightworker']; const n=order[order.indexOf(cur)+1]; n?play(n,false):ui()});
+audio.addEventListener('pause',ui); audio.addEventListener('play',ui);
+</script>
+</body>
+</html>
